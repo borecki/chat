@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Chat by Rafal Borek</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+        <i class="fa fa-bars"></i></button>
+        <div class="container">
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <a class="navbar-brand" href="http://borek-chat.ct8.pl">Chat</a>
+				<span class="navbar-brand brand-part-2">Code by Rafał Borek</span>
+                <ul class="nav navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/rafal.borek1" target="_blank" class="nav-link"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/borecki" target="_blank" class="nav-link"><i class="fa fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="view">
+    <div class="full-bg-img flex-center">
+        <div class="container">
+            <div class="row" id="home">        
+                <div class="col-lg-6 desc-parent">
+                    <div class="description">
+                        <h2 class="h2-responsive wow fadeInLeft">Join to chat right now! </h2>
+                        <p class="wow fadeInLeft" data-wow-delay="0.4s">Join the chat and talk with many people in real time! </p>
+                        <br>
+                        <a class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 card-parent">
+                    <div class="card wow fadeInRight">
+                        <div class="card-block">                              
+                            <div class="text-xs-center">
+                                <h3><i class="fa fa-comments"></i> Join chat</h3>
+                                <hr>
+                            </div>                              
+                            <div class="md-form">
+                                <i class="fa fa-user prefix"></i>
+								<input type="text" class="form-control" id="yourName" >
+                                <label for="yourName">Your name or nick</label>
+                            </div>
+                            <div class="text-xs-center">
+								<button class="btn btn-primary" id="join">Join now</button>
+                                <hr>
+                                <fieldset class="form-group">
+									<span>Max name length: 8 characters.</span><br>
+                                    <input type="checkbox" id="checkbox1">
+                                    <label for="checkbox1">Remember my name!</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+			</div>                                
+			<div  id="chat"> 
+				<div class="form-inline logAs">
+					<span>Logged as: <span id="logAsValue">a</span></span>
+					<button class="pull-right" id="logOut"><i class="fa fa-times"></i></button>
+				</div>
+				<div id="chatWindow">
+				</div>
+				<hr>				
+				<div class="form-group" id="textarea">
+					<textarea class="form-control" rows="3" id="message" placeholder="Message..."></textarea>
+				</div>
+				<button class="btn btn-primary pull-right" id="submit" disabled>Send</button>
+			</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
